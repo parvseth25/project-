@@ -1,7 +1,11 @@
-# My First Project
+# 🔐 KeyVault-CLI
 
-A beginner-friendly Python CLI project.
+A lightweight local credential manager protected with **AES-GCM-256** encryption and **PBKDF2-HMAC-SHA256** key derivation.
 
-## How to Run
+## 🚀 Setup & Run
 ```bash
-python main.py
+pip install -r requirements.txt
+python main.py init
+python main.py add github user@example.com -g
+python main.py get github
+python main.py list
